@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8"/>
+  <title>Shaun Kriel Survey Form
+  </title>
+</head>
+<body>
+  <h1 id="title">Shaun Kriel Survey Form</h1>
+  <p id="description">Thank you for taking the time to complete this survey. It will help in improving this website.</p>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name">Name</label>
+        <input id="name" type="text" required><br></br>
+    <label for="name">Email</label>
+        <input id="email" type="email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}" size="30" required><br></br>
+    <label for="number">Age (optional)</label>
+        <input id="number" type="number" min="10" max="99"><br></br>    
+    <label for="select">Which option best describes your current role?</label><br></br>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer Not To Say</option> 
+          <option value="other">Other</option> 
+    </fieldset>
+  </form>
+</body>
+</html>
