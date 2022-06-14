@@ -11,11 +11,11 @@
   <p id="description">Thank you for taking the time to complete this survey. It will help in improving this website.</p>
   <form id="survey-form">
     <fieldset>
-      <label for="name">Name</label>
+      <label for="name">Name</label><br></br>
         <input id="name" type="text" required><br></br>
-    <label for="name">Email</label>
+    <label for="name">Email</label><br></br>
         <input id="email" type="email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}" size="30" required><br></br>
-    <label for="number">Age (optional)</label>
+    <label for="number">Age (optional)</label><br></br>
         <input id="number" type="number" min="10" max="99"><br></br>    
     <label for="select">Which option best describes your current role?</label><br></br>
         <select id="dropdown" name="role" class="form-control" required>
@@ -24,7 +24,26 @@
           <option value="job">Full Time Job</option>
           <option value="learner">Full Time Learner</option>
           <option value="preferNo">Prefer Not To Say</option> 
-          <option value="other">Other</option> 
+          <option value="other">Other</option></select><br></br>
+          <label for="select">Would you recommend Shaun Kriel for your projects?</label><br></br>
+        <input type="radio" id="definitely" type="options" value="definitely">
+        <label for="definitely">Definitely</label><br></br>
+        <input type="radio" id="maybe" type="options" value="definitely">
+        <label for="definitely">Maybe</label><br></br>
+        <input type="radio" id="not sure" type="options" value="definitely">
+        <label for="definitely">Not Sure</label><br></br>
+<label for="checkbox">What would you like to be improved? (check all that apply)</label><br></br>
+  <input type="checkbox" id="front-end projects" name="checkbox" value="Front-End Projects">
+  <label for="checkbox">Front-End Projects</label><br></br>
+  <input type="checkbox" id="back-end projects" name="checkbox" value="Back-End Projects">
+  <label for="checkbox">Back-End Projects</label><br></br>
+  <input type="checkbox" id="challenges" name="checkbox" value="Challenges">
+  <label for="checkbox">Challenges</label><br></br>
+  <input type="checkbox" id="Forum" name="checkbox" value="Forum">
+  <label for="checkbox">Forum</label><br></br>
+  <input type="checkbox" id="Videos" name="checkbox" value="Videos">
+  <label for="checkbox">Videos</label><br></br>
+  <button type="submit">Submit</button>
     </fieldset>
   </form>
 </body>
