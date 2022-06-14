@@ -1,1 +1,7 @@
-Styles.css
+body {
+    background-color: rgb(43, 43, 186);
+    color: rgb(243, 237, 237);
+    font-family: sans-serif;
+    padding: 5px;
+    margin: auto;
+  }
