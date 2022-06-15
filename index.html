@@ -12,11 +12,11 @@
   <form id="survey-form">
     <fieldset>
       <label for="name">Name</label><br></br>
-        <input id="name" type="text" required><br></br>
+        <input id="name" type="text" placeholder="Enter name here..." required><br></br>
     <label for="name">Email</label><br></br>
-        <input id="email" type="email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}" size="30" required><br></br>
+        <input id="email" type="email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}" size="30" placeholder="Enter email here..." required><br></br>
     <label for="number">Age (optional)</label><br></br>
-        <input id="number" type="number" min="10" max="99"><br></br>    
+        <input id="number" type="number" min="10" max="99" placeholder="Age"><br></br>    
     <label for="select">Which option best describes your current role?</label><br></br>
         <select id="dropdown" name="role" class="form-control" required>
           <option disabled selected value>Select current role</option>
@@ -43,6 +43,8 @@
   <label for="checkbox">Forum</label><br></br>
   <input type="checkbox" id="Videos" name="checkbox" value="Videos">
   <label for="checkbox">Videos</label><br></br>
+  <label for="textarea">Any comments or suggestions</label><br></br>
+  <input type="textarea" id="comments" name="textarea" placeholder="Enter comment here..."><br></br>
   <button type="submit">Submit</button>
     </fieldset>
   </form>
